@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:svgjs="http://svgjs.dev/svgjs" width="128" height="128" viewBox="0 0 128 128">
+
+    <g transform="matrix(0.8046875,0,0,0.8046875,12.506335372881338,16.185025844147717)">
+        <svg viewBox="0 0 59 55" data-background-color="#eaf3ee" preserveAspectRatio="xMidYMid meet" height="119"
+            width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <g id="tight-bounds" transform="matrix(1,0,0,1,-0.0036289999999894462,-0.03672039999999299)">
+                <svg viewBox="0 0 59.00725799999999 55.07344079999999" height="55.07344079999999"
+                    width="59.00725799999999">
+                    <g>
+                        <svg viewBox="0 0 59.00725799999999 55.07344079999999" height="55.07344079999999"
+                            width="59.00725799999999">
+                            <g>
+                                <svg viewBox="0 0 59.00725799999999 55.07344079999999" height="55.07344079999999"
+                                    width="59.00725799999999">
+                                    <g>
+                                        <svg viewBox="0 0 59.00725799999999 55.07344079999999"
+                                            height="55.07344079999999" width="59.00725799999999">
+                                            <g id="textblocktransform">
+                                                <svg viewBox="0 0 59.00725799999999 55.07344079999999"
+                                                    height="55.07344079999999" width="59.00725799999999" id="textblock">
+                                                    <g>
+                                                        <svg viewBox="0 0 59.00725799999999 55.07344079999999"
+                                                            height="55.07344079999999" width="59.00725799999999">
+                                                            <g>
+                                                                <svg viewBox="0 0 59.00725799999999 55.07344079999999"
+                                                                    height="55.07344079999999"
+                                                                    width="59.00725799999999">
+                                                                    <g>
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            viewBox="0 0 30 28" x="0" y="0"
+                                                                            height="55.07344079999999"
+                                                                            width="59.00725799999999"
+                                                                            class="icon-icon-0"
+                                                                            data-fill-palette-color="accent"
+                                                                            id="icon-0">
+                                                                            <path fill="#ffffff" fill-rule="evenodd"
+                                                                                d="M9 18v3h4v2H7v-7h6v2H9z m8 8h4v-8h-4v8z m9 0h-3V16h-8v10H4V15H2v13h26V15h-2v11z m2-17c0 1.379-1.121 2.5-2.5 2.5A2.502 2.502 0 0 1 23 9h-2c0 1.379-1.121 2.5-2.5 2.5A2.502 2.502 0 0 1 16 9h-2c0 1.379-1.122 2.5-2.5 2.5A2.503 2.503 0 0 1 9 9H7c0 1.379-1.122 2.5-2.5 2.5A2.503 2.503 0 0 1 2 9V6.277L4.566 2h20.868l1.799 3H7v2h21v2z m-1.434-9H3.434L0 5.723V9c0 2.481 2.019 4.5 4.5 4.5A4.49 4.49 0 0 0 8 11.825a4.49 4.49 0 0 0 7 0 4.49 4.49 0 0 0 7 0 4.49 4.49 0 0 0 3.5 1.675c2.481 0 4.5-2.019 4.5-4.5V5.723L26.566 0z"
+                                                                                data-fill-palette-color="accent"></path>
+                                                                        </svg>
+                                                                    </g>
+                                                                </svg>
+                                                            </g>
+                                                        </svg>
+                                                    </g>
+                                                </svg>
+                                            </g>
+                                        </svg>
+                                    </g>
+                                </svg>
+                            </g>
+                        </svg>
+                    </g>
+                    <defs></defs>
+                </svg>
+                <rect width="59.00725799999999" height="55.07344079999999" fill="none" stroke="none"
+                    visibility="hidden"></rect>
+            </g>
+        </svg>
+    </g>
+</svg>
