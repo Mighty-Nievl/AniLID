@@ -1,8 +1,8 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
-
 
 Route::get('/', function () {
     return view('home', [
@@ -20,44 +20,15 @@ Route::get('/about', function () {
 Route::get('/posts', function () {
     return view('posts', [
         'title' => 'Blog AniLID!',
-        'posts' => [
-            [
-                'id' => 1,
-                'title' => 'Judul Artikel 1',
-                'author' => 'Nievl',
-                'body' => 'Selamat datang di AniLID! Berhubung ini merupakan web baru yang kami mulai di bulan September tahun 2024 ini, maka fitur-fitur layaknya MyAnimeList.net belum tersedia. Jadi kembalilah beberapa waktu kedepan. Terimakasih 🙏🏼😁'
-            ],
-            [
-                'id' => 2,
-                'title' => 'Judul Artikel 2',
-                'author' => 'yudayuda78',
-                'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti, provident dolorem nesciunt quidem debitis accusantium ut corrupti tempore excepturi perspiciatis aut soluta consequatur et sunt qui praesentium, amet modi.'
-            ]
-        ]
+        'posts' => Post::all(),
     ]);
 });
 
-Route::get('/posts/{id}', function ($id) {
-    $posts = [
-        [
-            'id' => 1,
-            'title' => 'Judul Artikel 1',
-            'author' => 'Nievl',
-            'body' => 'Selamat datang di AniLID! Berhubung ini merupakan web baru yang kami mulai di bulan September tahun 2024 ini, maka fitur-fitur layaknya MyAnimeList.net belum tersedia. Jadi kembalilah beberapa waktu kedepan. Terimakasih 🙏🏼😁'
-        ],
-        [
-            'id' => 2,
-            'title' => 'Judul Artikel 2',
-            'author' => 'yudayuda78',
-            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti, provident dolorem nesciunt quidem debitis accusantium ut corrupti tempore excepturi perspiciatis aut soluta consequatur et sunt qui praesentium, amet modi.'
-        ]
-    ];
+Route::get('/posts/{slug}', function ($slug) {
 
-    $post = Arr::first($posts, function ($post) use ($id) {
-        return $post['id'] == $id;
-    });
+    $post = Post::find($slug);
 
-    return view('post', ['title' => 'Single Post', 'post' => $post]); 
+    return view('post', ['title' => 'Single Post', 'post' => $post]);
 });
 
 Route::get('/contact', function () {
