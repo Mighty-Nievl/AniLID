@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', function () {
     return view('home', [
@@ -20,17 +22,42 @@ Route::get('/posts', function () {
         'title' => 'Blog AniLID!',
         'posts' => [
             [
+                'id' => 1,
                 'title' => 'Judul Artikel 1',
                 'author' => 'Nievl',
                 'body' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda molestias, iusto debitis veritatis alias culpa expedita aperiam libero ex, amet perferendis non impedit a modi totam quis ad voluptas nulla.'
             ],
             [
+                'id' => 2,
                 'title' => 'Judul Artikel 2',
                 'author' => 'yudayuda78',
                 'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti, provident dolorem nesciunt quidem debitis accusantium ut corrupti tempore excepturi perspiciatis aut soluta consequatur et sunt qui praesentium, amet modi.'
             ]
         ]
     ]);
+});
+
+Route::get('/posts/{id}', function ($id) {
+    $posts = [
+        [
+            'id' => 1,
+            'title' => 'Judul Artikel 1',
+            'author' => 'Nievl',
+            'body' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda molestias, iusto debitis veritatis alias culpa expedita aperiam libero ex, amet perferendis non impedit a modi totam quis ad voluptas nulla.'
+        ],
+        [
+            'id' => 2,
+            'title' => 'Judul Artikel 2',
+            'author' => 'yudayuda78',
+            'body' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti, provident dolorem nesciunt quidem debitis accusantium ut corrupti tempore excepturi perspiciatis aut soluta consequatur et sunt qui praesentium, amet modi.'
+        ]
+    ];
+
+    $post = Arr::first($posts, function ($post) use ($id) {
+        return $post['id'] == $id;
+    });
+
+    return view('post', ['title' => 'Single Post', 'post' => $post]); 
 });
 
 Route::get('/contact', function () {
