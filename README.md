@@ -3,5 +3,5 @@
 
 Require
 - Laravel
-- Tailwind.js
+- Tailwind
 - Vite
