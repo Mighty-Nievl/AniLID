@@ -13,7 +13,7 @@
                 </a>
                         <a href="#" class="font-light">{{ $post['author'] }} | 17 September 2024</a>
                         <p class="text-justify indent-6 pt-2">
-                            {{ Str::limit($post['body'], 75) }}
+                            {{ Str::limit($post['body'], 70) }}
                         </p>
                 </article>
                 <nav class="mt-2 border-t border-slate-300 text-emerald-600 hover:underline rounded">

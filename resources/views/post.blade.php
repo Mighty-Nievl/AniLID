@@ -9,7 +9,7 @@
                     {{ $post['title'] }}
                 </h3>
                 <a href="#" class="font-light">{{ $post['author'] }} | 17 September 2024</a>
-                <p class="text-justify indent-6 pt-2">
+                <p class="text-justify indent-6 pt-2 px-5">
                     {{ $post['body'] }}
                 </p>
             </article>

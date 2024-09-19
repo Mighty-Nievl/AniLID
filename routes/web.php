@@ -25,7 +25,7 @@ Route::get('/posts', function () {
                 'id' => 1,
                 'title' => 'Judul Artikel 1',
                 'author' => 'Nievl',
-                'body' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda molestias, iusto debitis veritatis alias culpa expedita aperiam libero ex, amet perferendis non impedit a modi totam quis ad voluptas nulla.'
+                'body' => 'Selamat datang di AniLID! Berhubung ini merupakan web baru yang kami mulai di bulan September tahun 2024 ini, maka fitur-fitur layaknya MyAnimeList.net belum tersedia. Jadi kembalilah beberapa waktu kedepan. Terimakasih 🙏🏼😁'
             ],
             [
                 'id' => 2,
@@ -43,7 +43,7 @@ Route::get('/posts/{id}', function ($id) {
             'id' => 1,
             'title' => 'Judul Artikel 1',
             'author' => 'Nievl',
-            'body' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda molestias, iusto debitis veritatis alias culpa expedita aperiam libero ex, amet perferendis non impedit a modi totam quis ad voluptas nulla.'
+            'body' => 'Selamat datang di AniLID! Berhubung ini merupakan web baru yang kami mulai di bulan September tahun 2024 ini, maka fitur-fitur layaknya MyAnimeList.net belum tersedia. Jadi kembalilah beberapa waktu kedepan. Terimakasih 🙏🏼😁'
         ],
         [
             'id' => 2,
