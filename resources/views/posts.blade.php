@@ -11,7 +11,7 @@
                         {{ $post['title'] }}
                     </h3>
                 </a>
-                        <a href="#" class="font-light">{{ $post['author'] }} | 17 September 2024</a>
+                        <a href="#" class="font-light">{{ $post['author'] }} - {{ $post->created_at->format('j M Y') }}, {{ $post->created_at->diffForHumans() }}</a>
                         <p class="text-justify indent-6 pt-2">
                             {{ Str::limit($post['body'], 70) }}
                         </p>
