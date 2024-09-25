@@ -1,27 +1,22 @@
 <?php
 
-namespace Database\Factories\iLID\database\factories;
+namespace Database\Factories;
 
+use App\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Post>
- */
 class PostFactory extends Factory
 {
-    /**
-     * Define the model's default state.
-     *
-     * @return array<string, mixed>
-     */
+    protected $model = Post::class;
+
     public function definition(): array
     {
         return [
-            'title' => fake()->sentence(),
-            'author' => fake()->name(),
-            'slug' => Str::slug(fake()->sentence()),
-            'body' => fake()->text()
+            'title' => $this->faker->sentence(),
+            'author' => $this->faker->name(),
+            'slug' => Str::slug($this->faker->sentence()),
+            'body' => $this->faker->text(),
         ];
     }
 }
